@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Reddit Random Hotkey Extension",
+  "version": "1.0",
+
+  "description": "Allows use of hotkey Alt+Shift+X to activate random button on Reddit.  Inspired by Wikipedia's 'Random article' button.",
+
+  "icons": {
+    "48": "icons/icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+
+}
